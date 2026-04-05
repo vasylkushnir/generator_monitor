@@ -17,3 +17,18 @@ export const formatLastUpdate = (date: Date): string => {
     })
     .replace(',', '');
 };
+
+export const formatBackendTime = (timeString: string | undefined, t: any) => {
+  if (!timeString) return '--';
+
+  const numbers = timeString.match(/\d+/g);
+
+  if (!numbers || numbers.length < 2) {
+    return timeString;
+  }
+
+  const hours = numbers[0];
+  const minutes = numbers[1];
+
+  return `${hours}${t('units.hours')} ${minutes}${t('units.minutes')}`;
+};

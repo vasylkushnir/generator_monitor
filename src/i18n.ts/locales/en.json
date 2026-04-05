@@ -40,6 +40,10 @@
       "deviceError": "Device could not process the request",
       "writeError": "Write Error",
       "connectionError": "Failed to connect to the generator. Check your Wi-Fi."
+    },
+    "units": {
+      "hours": "h",
+      "minutes": "m"
     }
   }
 }

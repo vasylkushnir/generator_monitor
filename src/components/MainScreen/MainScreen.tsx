@@ -11,6 +11,7 @@ import { HistoryItem } from '../../components/HistoryItem/HistoryItem';
 import { useServiceForm } from '../../hooks/useServiceForm';
 import { Header } from '../Header/Header';
 import { useTranslation } from 'react-i18next';
+import { formatBackendTime } from '../../utils/generatorHelpers';
 
 export const MainScreen = () => {
   const {
@@ -48,10 +49,16 @@ export const MainScreen = () => {
         <View style={isOffline ? styles.cardsOffline : styles.cardsOnline}>
           <StatsCard
             label={t('stats.totalWorkLabel')}
-            value={data?.total_work_time || t('stats.defaultTime')}
+            value={
+              formatBackendTime(data?.total_work_time, t) ||
+              t('stats.defaultTime')
+            }
           />
           <OilResourceCard
-            time={data?.oil_service_time || t('stats.defaultTime')}
+            time={
+              formatBackendTime(data?.oil_service_time, t) ||
+              t('stats.defaultTime')
+            }
             percent={oilPercent}
           />
         </View>
