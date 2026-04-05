@@ -73,3 +73,22 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Security: Passwords and signing keys
+android/gradle.properties
+android/app/*.keystore
+android/app/*.jks
+!android/app/debug.keystore
+
+# Android build artifacts
+*.apk
+*.aab
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE - VS Code
+.vscode/

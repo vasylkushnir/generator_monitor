@@ -1,0 +1,45 @@
+{
+  "translation": {
+    "header": {
+      "title": "Generator Monitor",
+      "updating": "Updating data...",
+      "offlineWithTime": "Offline (Data from: {{time}})",
+      "lastSeen": "Last seen: {{time}}"
+    },
+    "history": {
+      "recordNumber": "Record #{{id}}",
+      "mileage": "runtime"
+    },
+    "main": {
+      "historyTitle": "Service History",
+      "emptyHistory": "No records yet"
+    },
+    "stats": {
+      "totalWorkLabel": "Total Work Time",
+      "defaultTime": "0h 0m",
+      "oilResourceLabel": "Oil Resource"
+    },
+    "form": {
+      "title": "New oil change",
+      "placeholder": "Date or oil brand...",
+      "buttonSubmit": "Record change",
+      "buttonOffline": "Generator offline",
+      "warning": "Connect to the generator to record data"
+    },
+    "api": {
+      "serverError": "Server error: {{status}}",
+      "timeout": "Generator offline (Timeout)",
+      "resetFailed": "Failed to reset resource",
+      "resetTimeout": "Generator did not confirm reset (Timeout)"
+    },
+    "alerts": {
+      "attention": "Attention",
+      "enterData": "Please enter the oil brand or service date.",
+      "success": "Success",
+      "saveSuccess": "Service record saved successfully!",
+      "deviceError": "Device could not process the request",
+      "writeError": "Write Error",
+      "connectionError": "Failed to connect to the generator. Check your Wi-Fi."
+    }
+  }
+}
