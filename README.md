@@ -31,8 +31,18 @@ An Android application designed to monitor generator runtime and track oil servi
 
 ## 📸 Screenshots / Скріншоти
 
-*(Coming soon / Скоро будуть)*
-
+<table style="width: 100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="./src/assets/online.jpeg" width="300" alt="Generator online" /><br />
+      <b>✅ Generator is online</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="./src/assets/offline.jpeg" width="300" alt="Generator offline" /><br />
+      <b>❌ Generator is offline</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
