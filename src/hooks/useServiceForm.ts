@@ -19,6 +19,8 @@ export const useServiceForm = (onSuccess: () => void) => {
     try {
       const success = await resetOil(note);
 
+      console.log(success);
+
       if (success) {
         setNote('');
         onSuccess();

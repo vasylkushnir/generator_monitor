@@ -12,8 +12,12 @@ import { useServiceForm } from '../../hooks/useServiceForm';
 import { Header } from '../Header/Header';
 import { useTranslation } from 'react-i18next';
 import { formatBackendTime } from '../../utils/generatorHelpers';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../navigation/RootNavigator';
 
-export const MainScreen = () => {
+type Props = NativeStackScreenProps<RootStackParamList, 'Main'>;
+
+export const MainScreen = ({ navigation }: Props) => {
   const {
     data,
     isConnecting,
@@ -44,6 +48,7 @@ export const MainScreen = () => {
           isConnecting={isConnecting}
           isOffline={isOffline}
           lastUpdate={lastUpdate}
+          onSettingsPress={() => navigation.navigate('Settings')}
         />
 
         <View style={isOffline ? styles.cardsOffline : styles.cardsOnline}>

@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   note: {
-    color: Colors.primary,
+    color: Colors.text,
     fontSize: 16,
     fontWeight: '600',
     marginBottom: 4,

@@ -1,21 +1,23 @@
 import './src/i18n.ts';
 import React from 'react';
-import { StatusBar, StyleSheet } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar, StyleSheet, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
 import { Colors } from './src/theme/colors';
-import { MainScreen } from './src/components/MainScreen/MainScreen';
+import { RootNavigator } from './src/navigation/RootNavigator';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
+      <View style={styles.container}>
         <StatusBar
           barStyle="light-content"
           backgroundColor={Colors.background}
         />
-
-        <MainScreen />
-      </SafeAreaView>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </View>
     </SafeAreaProvider>
   );
 };

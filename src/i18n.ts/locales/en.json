@@ -44,6 +44,26 @@
     "units": {
       "hours": "h",
       "minutes": "m"
+    },
+    "common": {
+      "cancel": "Cancel",
+      "version": "Version"
+    },
+    "settings": {
+      "title": "Settings",
+      "languageSelectTitle": "App Language",
+      "languageSelectDesc": "Select your preferred language",
+      "sections": {
+        "interface": "Interface",
+        "generator": "Generator",
+        "about": "About App"
+      },
+      "items": {
+        "language": "Language",
+        "updateInterval": "Data update",
+        "oilLimit": "Oil limit",
+        "github": "Developer's GitHub"
+      }
     }
   }
 }

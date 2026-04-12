@@ -42,8 +42,28 @@
       "connectionError": "Не вдалося з’єднатися з генератором. Перевірте Wi-Fi."
     },
     "units": {
-      "hours": "г",
+      "hours": "год",
       "minutes": "хв"
+    },
+    "common": {
+      "cancel": "Скасувати",
+      "version": "Версія"
+    },
+    "settings": {
+      "title": "Налаштування",
+      "languageSelectTitle": "Мова інтерфейсу",
+      "languageSelectDesc": "Оберіть мову додатка",
+      "sections": {
+        "interface": "Інтерфейс",
+        "generator": "Генератор",
+        "about": "Про додаток"
+      },
+      "items": {
+        "language": "Мова",
+        "updateInterval": "Оновлення даних",
+        "oilLimit": "Ліміт мастила",
+        "github": "GitHub розробника"
+      }
     }
   }
 }

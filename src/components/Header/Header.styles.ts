@@ -4,36 +4,41 @@ import { Colors } from '../../theme/colors';
 export const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 15,
+    alignItems: 'flex-start',
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    marginBottom: 24,
   },
-  headerTextContainer: {
+  titleContainer: {
     flex: 1,
+    marginRight: 16,
   },
   title: {
     fontSize: 22,
-    fontWeight: 'bold',
+    fontWeight: '600',
     color: Colors.text,
   },
   statusSubtitle: {
-    fontSize: 13,
+    fontSize: 12,
     color: Colors.textSecondary,
-    marginTop: 4,
+    marginTop: 2,
   },
   errorText: {
     color: Colors.error,
+  },
+  rightActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 4,
   },
   statusDot: {
     width: 12,
     height: 12,
     borderRadius: 6,
-    marginLeft: 10,
-    shadowColor: Colors.shadow,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 2,
-    elevation: 3,
+    marginLeft: 16,
+  },
+  settingsButton: {
+    padding: 8,
   },
 });

@@ -1,9 +1,16 @@
-const OIL_LIMIT_SECONDS = 50 * 3600;
+import { SETTINGS_DEFAULTS } from '../services/storage';
 
-export const calculateOilPercent = (seconds: number | undefined): number => {
-  if (seconds === undefined || seconds === null) return 0;
-  const percent = Math.round(100 - (seconds / OIL_LIMIT_SECONDS) * 100);
-  return Math.max(0, Math.min(100, percent));
+export const calculateOilPercent = (
+  seconds: number | undefined,
+  limitHours: number = Number(SETTINGS_DEFAULTS.OIL_LIMIT),
+): number => {
+  if (!seconds || seconds <= 0) return 0;
+
+  const limitSeconds = limitHours * 3600;
+
+  const percentRemaining = Math.round(100 - (seconds / limitSeconds) * 100);
+
+  return Math.max(0, Math.min(100, percentRemaining));
 };
 
 export const formatLastUpdate = (date: Date): string => {
